@@ -10,18 +10,20 @@ def slow_type(t):
 
 class Character(object):
     def __init__(self, name, surname, age, personality, looks):
+        self.town = 'Riverdale'
         self.name = name
         self.surname = surname
         self.age = age
         self.personality = personality
         self.looks = looks
 
-town = 'Riverdale'
-name = 'Jughead'
-surname = 'Jones'
-age = 17
-personality = 'determined, extroverted, sensing, feeling, judging, impulsive, trusting, heart over head, wants to be my best self, I play football'
-looks = 'black hair, blue/green eyes, and I always wear my hat'
+jughead = Character('Jughead', 'Jones', '17', ('smart, determined, introverted, intuitive, thinking, judging, kind of impulsive, can be caring, lonely, knack for morality and lost causes, not very trusting at first, nostalgic, self-imposing'), ('black hair, blue/green eyes, and I always wear my hat'))
+
+veronica = Character('Veronica', 'Lodge', '17', ('determined, extroverted, intuitive, thinking, perception, calm, sassy, maybe a little emotionally detached, likes aruging (especially winning the arguments)'), ('dark brown/black hair', 'brown eyes'))
+
+betty = Character('Betty', 'Cooper', '17', ('extroverted, intuitive, feeling, judging, turbulent, led by feelings/judgement, girl-next-door type, nice, determined'), ('blonde hair, blue eyes'))
+
+archie = Character('Archie', 'Andrews', '17', ('determined, extroverted, sensing, feeling, judging, impulsive, trusting, heart over head, wants to be my best self'), ('red head, brown/hazel eyes, fit/muscular, plays football'))
 
 slow_type("""
 
@@ -34,19 +36,21 @@ answer = slow_type(input("Hello. Would you like to play my game? "))
 if answer == 'yes':
     slow_type("Great! Let's get started! ")
 
-else:
+elif answer == 'no':
     slow_type("Oh, okay )): Maybe next time :/ ")
+    sys.exit(0)
 
 slow_type(f"""
-Hey, what's up, my name is {name} {surname}, and I'm {age} years old. I'm from Rockaway, New York.
+Hey, what's up, my name is {jughead.name} {jughead.surname}, and I'm {jughead.age} years old. I'm from Rockaway, New York.
 Our story is about a town, a small town, and the people in the town.
 From a distance, it presents itself like so many other small towns all over the world.
 Safe
 Decent
 Innocent
-Get closer, and you'll start to see the shadows that lie underneath. Our town is {town}, and our story starts, I guess, over the summer
+Get closer, and you'll start to see the shadows that lie underneath. Our town is {jughead.town}, and our story starts, I guess, over the summer
 """
 )
+
 
 answer1 = input("Would you like to learn our story? ")
 
@@ -88,4 +92,7 @@ while True:
 
 slow_type(f"""
 Brace yourself, as this is story is about to take off...
-        """)
+
+Here is where I introduce you to another character in my story, {veronica.name} {veronica.surname} and her mom, Hermione Lodge. Some say that she has a not-so-good reputation,
+but as we go throught the story, I'll let you built your own opinion.
+""")
