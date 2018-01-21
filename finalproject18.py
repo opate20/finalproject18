@@ -72,15 +72,20 @@ NEW ITEM IN SECRETS INVENTORY!!!
 """
 )
 
-While True:
+while True:
     answer2 = input('type secrets to look at the secrets you have learned or type continue to keep going ')
     secrets = []
     if answer2 == 'secrets':
         secrets.append('Death of Jason Blossom')
         print(secrets)
+        print('\n\n')
         continue
     elif answer2 == 'continue':
-        slow_type(f"""
-        Brace yourself, as this is story is about to take off...
-        """)
         break
+    else:
+        print('Sorry, I do not recongnize that command\n')
+        continue
+
+slow_type(f"""
+Brace yourself, as this is story is about to take off...
+        """)
