@@ -1,4 +1,4 @@
-import os,sys,time,random
+import sys,time,random
 
 typing_speed = 200 #wpm
 def slow_type(t):
