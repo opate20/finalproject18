@@ -31,12 +31,16 @@ MAKE SURE TO TYPE IN ALL LOWER CASE
 
 """)
 
-answer = slow_type(input("Hello. Would you like to play my game? "))
+slow_type("Hello. Would you like to play my game? ")
+answer = input()
+print('your answer was', answer)
 
 if answer == 'yes':
     slow_type("Great! Let's get started! ")
-elif answer == 'no':
+# elif answer == 'no':
+else:
     slow_type("Oh, okay )): Maybe next time :/ ")
+    sys.exit()
 
 slow_type(f"""
 Hey, what's up, my name is {jughead.name} {jughead.surname}, and I'm {jughead.age} years old. I'm from Rockaway, New York.
@@ -49,14 +53,14 @@ Get closer, and you'll start to see the shadows that lie underneath. Our town is
 """
 )
 
-
-answer1 = input("Would you like to learn our story? ")
+slow_type("Would you like to learn our story? ")
+answer1 = input()
 
 if answer1 == 'yes':
     slow_type("Alright, but just know, whatever you learn here, you MUST keep a secret. \n")
 elif answer1 == 'no':
     slow_type("Okay, come back if you change your mind. ")
-    os._exit(1)
+    sys.exit()
 else:
     slow_type("Sorry, I don't recognize that")
 
