@@ -1,6 +1,6 @@
-import sys,time,random
+import os,sys,time,random
 
-typing_speed = 100 #wpm
+typing_speed = 200 #wpm
 def slow_type(t):
     for l in t:
         sys.stdout.write(l)
@@ -23,7 +23,7 @@ veronica = Character('Veronica', 'Lodge', '17', ('determined, extroverted, intui
 
 betty = Character('Betty', 'Cooper', '17', ('extroverted, intuitive, feeling, judging, turbulent, led by feelings/judgement, girl-next-door type, nice, determined'), ('blonde hair, blue eyes'))
 
-archie = Character('Archie', 'Andrews', '17', ('determined, extroverted, sensing, feeling, judging, impulsive, trusting, heart over head, wants to be my best self'), ('red head, brown/hazel eyes, fit/muscular, plays football'))
+archie = Character('Archie', 'Andrews', '17', ('determined, extroverted, sensing, feeling, judging, impulsive, trusting, heart over head, wants to be my best self'), ('red head, brown/hazel eyes, fit/muscular, and I play football'))
 
 slow_type("""
 
@@ -35,10 +35,8 @@ answer = slow_type(input("Hello. Would you like to play my game? "))
 
 if answer == 'yes':
     slow_type("Great! Let's get started! ")
-
 elif answer == 'no':
     slow_type("Oh, okay )): Maybe next time :/ ")
-    sys.exit(0)
 
 slow_type(f"""
 Hey, what's up, my name is {jughead.name} {jughead.surname}, and I'm {jughead.age} years old. I'm from Rockaway, New York.
@@ -55,10 +53,12 @@ Get closer, and you'll start to see the shadows that lie underneath. Our town is
 answer1 = input("Would you like to learn our story? ")
 
 if answer1 == 'yes':
-    slow_type("Alright, but just know, whatever you learn here, you MUST keep a secret. ")
-
-else:
+    slow_type("Alright, but just know, whatever you learn here, you MUST keep a secret. \n")
+elif answer1 == 'no':
     slow_type("Okay, come back if you change your mind. ")
+    os._exit(1)
+else:
+    slow_type("Sorry, I don't recognize that")
 
 slow_type(f"""
 On the Fourth of July, just after dawn, Jason and Cheryl Blossom drove out to Sweetwater River for an early morning boat ride
@@ -87,12 +87,42 @@ while True:
     elif answer2 == 'continue':
         break
     else:
-        print('Sorry, I do not recongnize that command\n')
+        print("Sorry, I do not recognize that command\n")
         continue
 
 slow_type(f"""
-Brace yourself, as this is story is about to take off...
+Here is where I introduce you to another few characters in my story, {veronica.name} {veronica.surname}, her mom, Hermione Lodge, and her dad, Hiram Lodge.
+Some say that Veronica has a not-so-good reputation, but as we go through the story, I'll let you built your own opinion. For now, I'll give you some background to the family, and maybe even some of their secrets...
 
-Here is where I introduce you to another character in my story, {veronica.name} {veronica.surname} and her mom, Hermione Lodge. Some say that she has a not-so-good reputation,
-but as we go throught the story, I'll let you built your own opinion.
+They lived in New York City, but they recently moved due to some... well... complications. Veronica wanted to start fresh and reinvent herself, as she used to be a 'mean girl' at her old school.
+the girl in the popular clique that had {veronica.looks}, and she was pretty and rich, and everyone wanted to be her.
+
+Her mother is quite interesting, being the love interest of both Mr. Lodge and Mr. Andrews while they were in high school. Now, she is helping him run his business and criminal empire while he is behind bars
+
+Her father on the other hand, Hiram Lodge, is a complicated man. While being the richest man in Riverdale, he is a criminal. He's cheated people out of their money and even made some families go bankrupt.
+Right now, he's in jail for fraud and embezzlement, but I heard he's coming back to Riverdale soon.
+
+NEW SECRETS ADDED INTO INVENTORY
+
 """)
+
+while True:
+    answer3 = input('type secrets to look at the secrets you have learned or type continue to keep going ')
+    secrets = []
+    if answer3 == 'secrets':
+        secrets.append("Death of Jason Blossom")
+        print(secrets[0])
+        secrets.append("History to Veronica Lodge")
+        print(secrets[1])
+        secrets.append("Hiram Lodge and his activities")
+        print(secrets[2])
+        secrets.append("Hermione Lodge helping Hiram keep his criminal empire going")
+        print(secrets[3])
+        print('\n\n')
+        continue
+    elif answer3 == 'continue':
+        break
+    else:
+        print('Sorry, I do not recognize that command\n')
+        continue
+
