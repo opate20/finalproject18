@@ -55,7 +55,9 @@ elif answer == 'no':
     slow_type("Oh, okay )): Maybe next time :/ ")
     sys.exit() #this will exit the game if they say that they don't want to play the game
 else:
-    slow_type("Sorry, I need a valid answer")
+    print("Sorry, I need a valid answer\n")
+    #continue
+    #**************************
 
 slow_type(f"""
 Hey, what's up, my name is {jughead.name} {jughead.surname}, and I'm {jughead.age} years old. I'm from Rockaway, New York.
@@ -77,7 +79,9 @@ elif answer1 == 'no':
     slow_type("Okay, come back if you change your mind. ")
     sys.exit()
 else:
-    slow_type("Sorry, I don't recognize that")
+    print("Sorry, I don't recognize that command\n")
+    #continue
+    #***************************
 
 slow_type(f"""
 On the Fourth of July, just after dawn, Jason and Cheryl Blossom drove out to Sweetwater River for an early morning boat ride
@@ -174,7 +178,7 @@ VERONICA: What is a Chock'lit Shoppe and why does it sell burgers?
 
 ... she was the new mystery, because with her will come trouble and even more secrets...
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 It's about time to introduce some more characters before we move on, and they are {betty.name} {betty.surname} and {archie.name} and {archie.surname}.
 
@@ -204,7 +208,7 @@ BETTY: What?
 
 KEVIN: Game-changer. Archie got hot! He's got abs now. Six more reasons for you to take that ginger bull by the horns tonight.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 """)
 
@@ -268,7 +272,7 @@ VERONICA (to ARCHIE and BETTY): Hi
 
 ARCHIE: Hey.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 """)
 
@@ -300,7 +304,7 @@ BETTY: By seven minutes. I was with Archie, who has red hair, yes, but is nothin
 
 ALICE: Oh, but sweetie, all boys are like Jason Blossom.***
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 (at school)
 
@@ -351,7 +355,7 @@ ARCHIE: Who's lighting fireworks at 6:00 in the morning?
 MS. GRUNDY: How would we explain why we were together at Sweetwater River at 6:00 a.m. on the Fourth of July? ... And you're right. We didn't say anything. We're both going to have to live with that choice.
 Do you understand? I think you should pursue your music, but not with me. ***
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 At about lunch-time, everyone is sitting outside and enjoying themselves back on the first day of school.
 
@@ -407,7 +411,7 @@ Look, if you want to be a River Vixen, I'll help you prep. I have moves.
 
 BETTY: Okay. You know what? Show me your moves.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 """)
 
@@ -480,7 +484,7 @@ FRED: Well, I have clients. I can't very well have Hermione Lodge, the wife of H
 
 HERMIONE: I suppose you can't.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 While not as interesting as two high school sweethearts reuniting, Veronica and Betty were trying out for the cheerleading. But, Cheryl is the senior captain of the team and her brother
 dated Betty's sister before he went missing, so things were bound to get messy.
@@ -543,7 +547,7 @@ ARCHIE: Okay. Yeah, okay. Bye.
 
 BETTY and VERONICA: Bye.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 (at Betty's house after tryouts)
 
@@ -577,7 +581,7 @@ ALICE: You think so? You think she's going to be your friend? Let me tell you so
 
 BETTY: I don't want to hear it, Mom. It's happening. I'm going.***
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 """)
 
@@ -658,7 +662,7 @@ FRED: I would never force you to play football. I don't care if you play footbal
 But some advice, man-to-man? These decisions that you're making now, son, they have consequences. They go on to form who you are and who you'll become.
 Whatever you decide, be confident enough in it that you don't have to lie.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 As the night went on and more secrets were spilt, there was something more interesting brewing.
 
@@ -698,7 +702,7 @@ BETTY: Is that so impossible to imagine?
 
 CHERYL(at a distance away from BETTY and ARCHIE) Make sure those two turtledoves come to my after-party. Veronica too. I'm in the mood for chaos.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 Hey, just so you know, there are quite some secrets in your inventory so far!!!
 """)
@@ -820,7 +824,7 @@ ARCHIE: Can I come with you? We should probably try to find her.
 
 VERONICA: Believe me! The last thing Betty wants is us tracking her down together. We messed up.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 HERMIONE: Hey, you're home early. How was the dance?
 
