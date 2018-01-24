@@ -75,14 +75,16 @@ Get closer, and you'll start to see the shadows that lie underneath. Our town is
 slow_type("Would you like to learn our story? ")
 answer1 = input() #basically the same as the first one and every other one
 
-if answer1 == 'yes':
-    slow_type("Alright, but just know, whatever you learn here, you MUST keep a secret. \n")
-elif answer1 == 'no':
-    slow_type("Okay, come back if you change your mind. ")
-    sys.exit()
-else:
-    print("Sorry, I don't recognize that command\n")
-    #continue
+while True:
+    if answer1 == 'yes':
+        slow_type("Alright, but just know, whatever you learn here, you MUST keep a secret. \n")
+        break
+    elif answer1 == 'no':
+        slow_type("Okay, come back if you change your mind. ")
+        sys.exit()
+    else:
+        print("Sorry, I don't recognize that command\n")
+        #continue
     #***************************
 
 slow_type(f"""
