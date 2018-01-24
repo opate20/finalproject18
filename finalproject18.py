@@ -1,7 +1,7 @@
 import sys,time,random
 #this imports different modules to python so that i can use them later
 
-typing_speed = 200 #wpm
+typing_speed = 100 #wpm
 #defines the speed in which the screen will type in words per minute
 def slow_type(t): #t will be the word or string that you are trying to have python write
     for l in t: #l will be the letter(s) in the word or phrase that's being printed
@@ -44,20 +44,22 @@ MAKE SURE TO TYPE IN ALL LOWER CASE
 
 """)
 
-slow_type("Hello. Would you like to play my game? ")
-answer = input() #allows the user to input a specific answer
-print('your answer was', answer)
 
-if answer == 'yes':
-    slow_type("Great! Let's get started! ")
-    #not having anything after this option allows python to continue going through the code
-elif answer == 'no':
-    slow_type("Oh, okay )): Maybe next time :/ ")
-    sys.exit() #this will exit the game if they say that they don't want to play the game
-else:
-    print("Sorry, I need a valid answer\n")
-    #continue
-    #**************************
+while True:
+    slow_type("Hello. Would you like to play my game? ")
+    answer = input() #allows the user to input a specific answer
+    print('your answer was', answer)
+    if answer == 'yes':
+        slow_type("Great! Let's get started! ")
+        break
+        #not having anything after this option allows python to continue going through the code
+    elif answer == 'no':
+        slow_type("Oh, okay )): Maybe next time :/ ")
+        sys.exit() #this will exit the game if they say that they don't want to play the game
+    if answer != 'yes' or 'no':
+        print("Sorry, I need a valid answer\n")
+        continue
+
 
 slow_type(f"""
 Hey, what's up, my name is {jughead.name} {jughead.surname}, and I'm {jughead.age} years old. I'm from Rockaway, New York.
