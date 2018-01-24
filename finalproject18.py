@@ -1025,6 +1025,5 @@ while True:
     elif answer12 == 'exit':
         break
 
-    else:
         print('Sorry, I do not recognize that command\n')
         break
